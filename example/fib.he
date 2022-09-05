@@ -1,0 +1,31 @@
+#extern function from io
+ccnd fn print_i32(i32 n);
+ccnd fn print_u8(u8 n);
+
+fn hsqure(i32 n)->i32{
+    n * n
+}
+
+fn fib(i32 n)->i32{
+    mut i32 rtv = 0;
+    if(n == 1)
+    {
+        rtv = 1;
+    }
+    elif (n == 2){
+        rtv = 2;
+    }else{
+        rtv = fib(n - 1) + fib(n - 2);
+    }
+    rtv
+}
+
+fn main()-> i32{
+    u8 b = 1 | 3 | 5 | 7 | fib(10);
+    print_u8(b);
+    
+    mut i32 a = hsqure(2);
+    print_i32(1);
+    print_i32(5);
+    fib(20)
+}

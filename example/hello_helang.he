@@ -1,0 +1,6 @@
+ccnd fn print_i8(i32 a);
+
+fn main()->i32{
+    print_i8(1);
+    print_i8(5);
+}

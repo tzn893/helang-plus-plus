@@ -1,0 +1,8 @@
+fn squre(i32 a,i32 b) -> i32{
+    #returns value of expression a * a
+   a * a + b * b
+}
+
+fn main(){
+    squre(1, squre(1,4) + 2);    
+}
