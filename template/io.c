@@ -23,7 +23,3 @@ void print_u8(uint64_t n){
     }
     printf("\n");
 }
-
-void test_5g(){
-    
-}
