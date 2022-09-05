@@ -23,3 +23,9 @@ void print_u8(uint64_t n){
     }
     printf("\n");
 }
+
+
+void test_5g(){
+    const char* msg = "Blocked by america.Please buy HuaWei to enable 5g";
+    printf("%s\n",msg);
+}

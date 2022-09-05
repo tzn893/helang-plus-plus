@@ -1,7 +1,10 @@
 ccnd fn print_i32(i32 a);
 
+
+#helang中 ‘#’ 为注释
+
 fn main()->i32 {
     print_i32(1);
-    print_i32(5);
+    print_i32(5); #在赛博理塘1!5!是你好的意思，我们的hello world也就是1!5!
     0
 }
