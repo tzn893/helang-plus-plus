@@ -30,7 +30,7 @@ void test_5g(){
     printf("%s\n",msg);
 }
 
-void powerCon(uint64_t na,int offset){
+void powerCon(uint64_t na,int force){
     int a[8],h = -1;
     for(int b = 0;b < 8;b++){
         int offset = (7 - b) * 8;
@@ -40,10 +40,9 @@ void powerCon(uint64_t na,int offset){
         }
     }
 
-    static int keyboard[26] = {0};
-    for(int i = 0;i < 8 - h;i++){
-        int force = a[i + h];
-        keyboard[offset + i] = force;
+    static int keyboard[68] = {0};
+    for(int i = h;i < 8;i++){
+        keyboard[a[i]] = force;
     }
     
     printf("keyboard powers : [%d",keyboard[0]);
