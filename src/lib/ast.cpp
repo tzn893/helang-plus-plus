@@ -360,6 +360,10 @@ optional<ptr<BodyExpr>> ASTParser::ParseBody(u32 start,u32 end, string& error)
 		p = expr_end + 1;
 	}
 
+	if (PeekExpect(HE_TOKEN_SEMICOLON, end - 1)) {
+		body.push_back(expr);
+		expr = nullptr;
+	}
 
 	return ptr<BodyExpr>(new BodyExpr(body, expr, tokens[start]));
 }

@@ -418,9 +418,7 @@ bool FuncExpr::FunctionBodyGenerate(string& error)
 				g_context->ir_builder->CreateRet(v.value());
 			}
 		}
-
 	}
-
 	
 	raw_string_ostream ss(error);
 	if (verifyFunction(*func, &ss))

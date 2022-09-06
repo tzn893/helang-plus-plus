@@ -34,7 +34,7 @@ void powerCon(uint64_t na,int offset){
     int a[8],h = -1;
     for(int b = 0;b < 8;b++){
         int offset = (7 - b) * 8;
-        a[b] = (n & (0xffll << offset) ) >> offset;
+        a[b] = (na & (0xffll << offset) ) >> offset;
         if(a[b] != 0 && h < 0){
             h = b;
         }
