@@ -46,7 +46,7 @@ void powerCon(uint64_t na,int offset){
         keyboard[offset + i] = force;
     }
     
-    printf("[%d",keyboard[0]);
+    printf("keyboard powers : [%d",keyboard[0]);
     for(int i = 1;i < 26;i++){
         printf(",%d",keyboard[i]);
     }
