@@ -1,3 +1,5 @@
+#define _CRT_SECURE_NO_WARNINGS
+
 #include <stdio.h>
 #include <stdint.h>
 
@@ -28,6 +30,13 @@ void print_u8(uint64_t n){
 void test_5g(){
     const char* msg = "Blocked by America.Please buy HuaWei to enable 5g";
     printf("%s\n",msg);
+}
+
+int input_i32(){
+    int num;
+    printf("input a i32 number:");
+    scanf("%d",&num);
+    return num;
 }
 
 void powerCon(uint64_t na,int force){
