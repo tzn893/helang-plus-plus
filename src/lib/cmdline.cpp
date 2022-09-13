@@ -61,7 +61,8 @@ ParamParser::ParamParser(int argc, const char** argvs, u32 tableCount, Parameter
 		}
 		else {
 			printf("error: unrecognized option %s usage:\n", argvs[i]);
-
+			print_help_message(nullptr,table,tableCount);
+			exit(-1);
 		}
 	}
 }
